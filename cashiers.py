@@ -237,3 +237,4 @@ scanner_lines = [simpy.Resource(env, capacity=1) for _ in range(CASHIER_LINES)]
 env.process(customer_arrival(env, scanner_lines))
 env.process(create_clock(env))
 env.run(until=1440)
+main.mainloop()
